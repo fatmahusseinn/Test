@@ -1,0 +1,105 @@
+1.
+┌──(kali㉿kali)-[~]
+└─$ mkdir "fatma hussein"
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ ls
+ Desktop   Documents   Downloads  'fatma hussein'   Music   Pictures   Public   Templates   Videos
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cd "fatma hussein"
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ 
+
+2.
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ mkdir Documents      
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ cd Documents      
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ touch file1.txt file2.txt file3.txt
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ ls          
+file1.txt  file2.txt  file3.txt
+
+3.
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ cd ..       
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ touch .hidden_file                 
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ ls -a
+.  ..  Documents  .hidden_file
+
+4.
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ nano file1.txt
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ cat file1.txt
+hello world
+
+5.
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ cd Documents
+
+6.
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ mkdir -- -
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ ls
+-  file1.txt  file2.txt  file3.txt
+                                                                                                                       
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ cd ./-"
+
+7.
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ cp -r Documents My_Documents
+
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ ls
+Documents  file1.txt  My_Documents
+
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ cd My_Documents/
+
+┌──(kali㉿kali)-[~/fatma hussein/My_Documents]
+└─$ ls
+-  file1.txt  file2.txt  file3.txt
+
+8.
+──(kali㉿kali)-[~/fatma hussein]
+└─$ cat .hidden_file
+
+9.
+──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ mv file2.txt /home/kali/"fatma hussein"
+
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ mv file3.txt /home/kali/"fatma hussein"
+
+┌──(kali㉿kali)-[~/fatma hussein/Documents]
+└─$ cd ..
+
+┌──(kali㉿kali)-[~/fatma hussein]
+└─$ ls
+Documents  file1.txt  file2.txt  file3.txt  My_Documents
+
+10.
+──(kali㉿kali)-[~/fatma hussein]
+└─$ cd
+
+┌──(kali㉿kali)-[~]
+└─$ rm -r "fatma hussein"
+
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
