@@ -1,0 +1,30 @@
+  388  unzip Updated-Task-02.zip
+  389  cd Updated-Task-02
+  390  ls
+  391  ls -a
+  392  cat README.txt
+  394  tar -xvf .level-1.tar
+  395  mv .level-1 level-1
+  396  ls
+  397  cat README.txt
+  398  cd level-1
+  399  ls
+  400  cat README.txt
+  404  mv level-2 level-2.gz
+  405  tar -xf level-2.gz
+  406  ls
+  408  cd level-2
+  409  ls
+  410  find -name level*
+  411  mv level-3 level-3.bzip2
+  412  mv level-3.bzip2 level-3.tar
+  413  tar -xvf level-3.tar
+  414  ls
+  415  cd level-3
+  416  find -iname Read*
+  417  cat README.txt
+  418  ls -li
+  419  cat X6lkChFKsj\n
+  420  find -size 73c
+  421  cd m7lRDpRTUJ
+  422  cat xVMvVOKNW5
