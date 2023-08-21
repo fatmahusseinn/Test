@@ -1,0 +1,37 @@
+Step1:
+1.sudo useradd -m osc
+2.sudo passwd osc
+3.sudo groupadd osc_group
+4.sudo usermod -aG osc_group osc
+5.sudo usermod -aG sudo osc
+6.su osc
+
+Step2:
+1.mkdir permission_practice
+2.cd permission_practice
+3.touch public_file.txt
+4.chmod 666 public_file.txt
+5.touch private_file.txt
+6.chmod 600 private_file.txt
+7.touch executable_script.sh
+8.chmod 750 executable_script.sh
+9.ls -l
+
+Step3:
+1.chown osc private_file.txt
+2.chgrp osc_group private_file.txt
+3.ls -l
+
+Step4:
+1.sleep 1000 &
+2.ps aux
+3.kill 221541 #sleep Pid
+4.vim
+5.ctrl+z
+6.kill -9 228404 #vim Pid
+7.ps aux | grep vim 
+8.ps aux | grep sleep
+
+Step5:
+1.sudo apt install neofetch
+2.sudo apt remove neofetch
